@@ -1,0 +1,42 @@
+ssdo-lib - SSDO-0.1 pipeline library.
+Pipeline overview is available via the [[https://vsb.fbb.msu.ru/share/rustam/ssdo/ssdo.pdf][link]].
+* Installation
+** Install [[https://conda.io/miniconda.html][miniconda]]
+   # ** Modeller conda package has errors, they have to be fixed before launching the pipeline.
+** Run the installation script:
+   #+begin_src bash
+     source conda_installation.sh
+   #+end_src
+** Configure parameters in constants.py file, mainly:
+*** ligand name:
+    #+begin_src python
+      ln = 'L_PI35P'
+    #+end_src
+** Configure some parameters in [[constants.py][constants.py]] file:
+*** Catalytic atom pairs from literature:
+    #+begin_src python
+      args.lit_at_pairs = [
+          [[17,  'SG',  'C'],  [3632, 'P3']],
+      ]
+      args.num_threads_em_nvt_npt = 12
+      args.conv_len_thres = 20
+      args.B_len_thres = 100000
+      args.run_hrx_gpu_id = 2
+    #+end_src
+*** Ligand net charge
+    #+begin_src python
+      args.net_charge = -5
+    #+end_src
+*** Protein pdb file 
+    #+begin_src python
+      args.E_pdb = "/home/user/1xww_prot.pdb"
+    #+end_src
+*** Ligand pdb file 
+    #+begin_src python
+      args.XH_pdb = "/home/user/L_PI35P_E.pdb"
+    #+end_src
+** Launch the pipeline:
+   #+begin_src bash
+  conda activate py37
+  ipython launch.py
+   #+end_src

@@ -4,7 +4,6 @@
 .history
 wget-log
 info.py
-README.org
 .mypy_cache
 .ob-jupyter
 __pycache__
