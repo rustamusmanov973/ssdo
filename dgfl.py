@@ -2153,7 +2153,7 @@ cd {self.s}; module load gmx/2019.6-threadedmpi-cuda-single-pm2.6-gpu; mpirun -n
         # for fes_idx in range(10):
         f5, f6 = self.rdv('dist_restrs_HREX')
         self['1/plumed_post_factum.dat'].write_text(textwrap.dedent(f"""
-            rmsd: READ FILE={self.chd1}/plumed_vars_stable.dat  VALUES=rmsd IGNORE_FORCES 
+            rmsd: READ FILE={self.chd1}/plumed_vars_stable.dat  VALUES=rmsd IGNORE_FORCES
             c:    READ FILE={self.chd1}/plumed_vars_stable.dat  VALUES=c IGNORE_FORCES 
             x:    READ FILE={self.chd1}/plumed_vars_stable.dat  VALUES=x IGNORE_FORCES 
 
