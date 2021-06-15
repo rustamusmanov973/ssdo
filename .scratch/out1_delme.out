@@ -1,0 +1,905 @@
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/MDAnalysis/topology/guessers.py:80: UserWarning: Failed to guess the mass for the following atom types: C.3
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/MDAnalysis/topology/guessers.py:80: UserWarning: Failed to guess the mass for the following atom types: O.2
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/MDAnalysis/topology/guessers.py:80: UserWarning: Failed to guess the mass for the following atom types: O.3
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/MDAnalysis/topology/guessers.py:80: UserWarning: Failed to guess the mass for the following atom types: P.3
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+2021-05-21 02:47:41,108 [MainThread  ] [INFO ]  GROMACS Pdb2gmx 514 version detected
+2021-05-21 02:47:41,113 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:41,609 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright pdb2gmx -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot.pdb -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -p p2g.top -water spce -ff amber99sb-ildn -i posre.itp
+
+2021-05-21 02:47:41,610 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:41,612 [MainThread  ] [INFO ]  
+Using the Amber99sb-ildn force field in directory amber99sb-ildn.ff
+
+Reading /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot.pdb...
+Read 1240 atoms
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+There are 1 chains and 0 blocks of water and 157 residues with 1240 atoms
+
+  chain  #res #atoms
+  1 'A'   157   1240  
+
+Reading residue database... (amber99sb-ildn)
+Processing chain 1 'A' (1240 atoms, 157 residues)
+Identified residue ALA1 as a starting terminus.
+Identified residue HIS157 as a ending terminus.
+Checking for duplicate atoms....
+Generating any missing hydrogen atoms and/or adding termini.
+Now there are 157 residues with 2460 atoms
+		--------- PLEASE NOTE ------------
+You have successfully generated a topology from: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot.pdb.
+The Amber99sb-ildn force field and the spce water model are used.
+		--------- ETON ESAELP ------------
+
+2021-05-21 02:47:41,613 [MainThread  ] [INFO ]                    :-) GROMACS - gmx pdb2gmx, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright pdb2gmx -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot.pdb -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -p p2g.top -water spce -ff amber99sb-ildn -i posre.itp
+
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.r2b
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/dna.r2b
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/rna.r2b
+
+WARNING: there were 0 atoms with zero occupancy and 49 atoms with
+         occupancy unequal to one (out of 1240 atoms). Check your pdb file.
+
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/atomtypes.atp
+Atomtype 67
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.rtp
+Residue 93
+Sorting it all out...
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/dna.rtp
+Residue 109
+Sorting it all out...
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/rna.rtp
+Residue 125
+Sorting it all out...
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.hdb
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/dna.hdb
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/rna.hdb
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.n.tdb
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.c.tdb
+Analysing hydrogen-bonding network for automated assignment of histidine
+ protonation. 245 donors and 237 acceptors were found.
+There are 332 hydrogen bonds
+Will use HISE for residue 66
+Will use HISE for residue 69
+Will use HISE for residue 72
+Will use HISE for residue 157
+8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                   CYS17   CYS62   HIS66   HIS69   HIS72   CYS90   MET91
+                   SG120   SG464  NE2499  NE2521  NE2543   SG696   SD703
+   CYS62   SG464   1.030
+   HIS66  NE2499   1.478   0.451
+   HIS69  NE2521   1.920   1.495   1.529
+   HIS72  NE2543   1.175   1.599   1.931   1.391
+   CYS90   SG696   1.580   1.992   2.253   2.513   1.528
+   MET91   SD703   1.058   1.282   1.552   1.971   1.223   0.711
+  CYS109   SG850   2.566   2.998   3.233   2.976   1.959   1.223   1.795
+  CYS145  SG1139   1.116   0.887   1.074   1.658   1.326   1.191   0.516
+  CYS148  SG1163   1.689   1.433   1.479   2.163   1.855   1.134   0.786
+  CYS149  SG1169   1.601   1.274   1.326   1.534   1.407   1.297   0.837
+  HIS157 NE21235   3.249   3.019   2.974   2.875   2.748   2.103   2.248
+                  CYS109  CYS145  CYS148  CYS149
+                   SG850  SG1139  SG1163  SG1169
+  CYS145  SG1139   2.185
+  CYS148  SG1163   2.095   0.664
+  CYS149  SG1169   2.022   0.562   0.684
+  HIS157 NE21235   1.950   2.247   1.837   1.763
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.arn
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/dna.arn
+Opening force field file /home/golovin/progs/share/gromacs/top/amber99sb-ildn.ff/rna.arn
+Making bonds...
+Number of bonds was 2483, now 2482
+Generating angles, dihedrals and pairs...
+Before cleaning: 6500 pairs
+Before cleaning: 6847 dihedrals
+Keeping all generated dihedrals
+Making cmap torsions...
+There are 6847 dihedrals,  496 impropers, 4474 angles
+          6464 pairs,     2482 bonds and     0 virtual sites
+Total mass 17678.180 a.m.u.
+Total charge -1.000 e
+Writing topology
+
+Writing coordinate file...
+
+gcq#438: "What about my nose?" (Aneesur Rahman, responding to an Argonne manager arguing the long hair of Charles Bennett in his group was disreputing the lab; Retold by Michael Klein)
+
+
+2021-05-21 02:47:41,618 [MainThread  ] [INFO ]  Compressing topology to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx_top.zip
+2021-05-21 02:47:41,620 [MainThread  ] [INFO ]  Ignored file amber99sb-ildn.ff/forcefield.itp
+2021-05-21 02:47:41,634 [MainThread  ] [INFO ]  Ignored file amber99sb-ildn.ff/spce.itp
+2021-05-21 02:47:41,635 [MainThread  ] [INFO ]  Ignored file amber99sb-ildn.ff/ions.itp
+2021-05-21 02:47:41,642 [MainThread  ] [INFO ]  Adding:
+2021-05-21 02:47:41,643 [MainThread  ] [INFO ]  ['p2g.top', 'posre.itp']
+2021-05-21 02:47:41,645 [MainThread  ] [INFO ]  to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx_top.zip
+2021-05-21 02:47:41,647 [MainThread  ] [INFO ]  Removed: ['p2g.top', 'posre.itp']
+2021-05-21 02:47:41,744 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:41,816 [MainThread  ] [INFO ]  echo "System" | gmx trjconv -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_complex_H.pdb
+
+2021-05-21 02:47:41,818 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:41,820 [MainThread  ] [INFO ]  Select group for output
+Selected 0: 'System'
+
+2021-05-21 02:47:41,821 [MainThread  ] [INFO ]                    :-) GROMACS - gmx trjconv, VERSION 5.1.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, VERSION 5.1.4
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx trjconv -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_complex_H.pdb
+
+Will write pdb: Protein data bank file
+Group     0 (         System) has  2460 elements
+Group     1 (        Protein) has  2460 elements
+Group     2 (      Protein-H) has  1240 elements
+Group     3 (        C-alpha) has   157 elements
+Group     4 (       Backbone) has   471 elements
+Group     5 (      MainChain) has   629 elements
+Group     6 (   MainChain+Cb) has   780 elements
+Group     7 (    MainChain+H) has   783 elements
+Group     8 (      SideChain) has  1677 elements
+Group     9 (    SideChain-H) has   611 elements
+Select a group: Reading frames from gro file 'GRoups of Organic Molecules in ACtion for Science', 2460 atoms.
+Reading frame       0 time    0.000   
+Precision of /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx.gro is 0.001 (nm)
+Last frame          0 time    0.000   
+
+
+gcq#333: "History has expired" (PubMed Central)
+
+
+2021-05-21 02:47:41,835 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:41,879 [MainThread  ] [INFO ]  echo "System" | gmx trjconv -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/unl.acpype/unl_GMX.gro -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/unl.acpype/unl_GMX.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/lig_complex_H.pdb
+
+2021-05-21 02:47:41,881 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:41,882 [MainThread  ] [INFO ]  Select group for output
+Selected 0: 'System'
+
+2021-05-21 02:47:41,883 [MainThread  ] [INFO ]                    :-) GROMACS - gmx trjconv, VERSION 5.1.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, VERSION 5.1.4
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx trjconv -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/unl.acpype/unl_GMX.gro -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/unl.acpype/unl_GMX.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/lig_complex_H.pdb
+
+Will write pdb: Protein data bank file
+Group     0 (         System) has    37 elements
+Group     1 (          Other) has    37 elements
+Group     2 (            UNL) has    37 elements
+Select a group: Reading frames from gro file 'unl_GMX.gro created by acpype (Rev: 0) on Fri May 21 02:47:37 2021', 37 atoms.
+Reading frame       0 time    0.000   
+Precision of /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/unl.acpype/unl_GMX.gro is 0.001 (nm)
+Last frame          0 time    0.000   
+
+
+gcq#259: "You Can Be Too Early, You Can Be Too Late and You Can Be On Time" (J. Cruijff)
+
+
+2021-05-21 02:47:41,906 [MainThread  ] [INFO ]  File /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_lig_H.pdb created
+2021-05-21 02:47:41,972 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx_top.zip
+2021-05-21 02:47:41,977 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:41,978 [MainThread  ] [INFO ]  ['048714b7-8885-4dd6-9b33-3f342aed749a/p2g.top', '048714b7-8885-4dd6-9b33-3f342aed749a/posre.itp']
+2021-05-21 02:47:41,980 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:41,981 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_pdb2gmx_top.zip
+2021-05-21 02:47:41,982 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:41,983 [MainThread  ] [INFO ]  048714b7-8885-4dd6-9b33-3f342aed749a/p2g.top
+2021-05-21 02:47:41,984 [MainThread  ] [INFO ]  048714b7-8885-4dd6-9b33-3f342aed749a/posre.itp
+2021-05-21 02:47:42,036 [MainThread  ] [INFO ]  Compressing topology to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex.top.zip
+2021-05-21 02:47:42,038 [MainThread  ] [INFO ]  Ignored file 048714b7-8885-4dd6-9b33-3f342aed749a/amber99sb-ildn.ff/forcefield.itp
+2021-05-21 02:47:42,050 [MainThread  ] [INFO ]  Ignored file 048714b7-8885-4dd6-9b33-3f342aed749a/amber99sb-ildn.ff/spce.itp
+2021-05-21 02:47:42,051 [MainThread  ] [INFO ]  Ignored file 048714b7-8885-4dd6-9b33-3f342aed749a/amber99sb-ildn.ff/ions.itp
+2021-05-21 02:47:42,058 [MainThread  ] [INFO ]  Adding:
+2021-05-21 02:47:42,059 [MainThread  ] [INFO ]  ['048714b7-8885-4dd6-9b33-3f342aed749a/lig_posres.itp', '048714b7-8885-4dd6-9b33-3f342aed749a/ligand.top', '048714b7-8885-4dd6-9b33-3f342aed749a/posre.itp', '048714b7-8885-4dd6-9b33-3f342aed749a/unl_GMX.itp']
+2021-05-21 02:47:42,060 [MainThread  ] [INFO ]  to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex.top.zip
+2021-05-21 02:47:42,063 [MainThread  ] [INFO ]  Removed: ['048714b7-8885-4dd6-9b33-3f342aed749a']
+2021-05-21 02:47:42,122 [MainThread  ] [INFO ]  GROMACS Editconf 514 version detected
+2021-05-21 02:47:42,127 [MainThread  ] [INFO ]  Centering molecule in the box.
+2021-05-21 02:47:42,128 [MainThread  ] [INFO ]  Distance of the box to molecule:   0.80
+2021-05-21 02:47:42,129 [MainThread  ] [INFO ]  Box type: octahedron
+2021-05-21 02:47:42,130 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:42,202 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright editconf -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_lig_H.pdb -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_editconf.gro -d 0.8 -bt octahedron -c
+
+2021-05-21 02:47:42,204 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:42,206 [MainThread  ] [INFO ]  Read 2497 atoms
+Volume: 0.552858 nm^3, corresponds to roughly 200 electrons
+No velocities found
+    system size :  3.785  4.348  4.693 (nm)
+    diameter    :  4.981               (nm)
+    center      :  1.651  0.029  1.559 (nm)
+    box vectors :  0.809  0.674  1.014 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  :   0.55               (nm^3)
+    shift       :  1.640  4.625  1.128 (nm)
+new center      :  3.291  4.654  2.687 (nm)
+new box vectors :  6.581  6.581  6.581 (nm)
+new box angles  :  70.53 109.47  70.53 (degrees)
+new box volume  : 219.46               (nm^3)
+
+2021-05-21 02:47:42,207 [MainThread  ] [INFO ]                   :-) GROMACS - gmx editconf, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright editconf -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/prot_lig_H.pdb -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_editconf.gro -d 0.8 -bt octahedron -c
+
+
+gcq#188: "How Do You Like Your Vacation So Far ?" (Speed 2 - Cruise Control)
+
+
+2021-05-21 02:47:42,211 [MainThread  ] [INFO ]  Removed: []
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/biobb_common/tools/file_utils.py:354: UserWarning: Warning: input_solvent_gro_path is not a recognized property. The most similar property is: input_top_zip_path
+  error_property, close_property))
+2021-05-21 02:47:42,315 [MainThread  ] [INFO ]  GROMACS Solvate 514 version detected
+2021-05-21 02:47:42,339 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex.top.zip
+2021-05-21 02:47:42,340 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:42,341 [MainThread  ] [INFO ]  ['28c4b2e7-b9d3-48db-9f39-932853819854/lig_posres.itp', '28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top', '28c4b2e7-b9d3-48db-9f39-932853819854/posre.itp', '28c4b2e7-b9d3-48db-9f39-932853819854/unl_GMX.itp']
+2021-05-21 02:47:42,342 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:42,343 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex.top.zip
+2021-05-21 02:47:42,344 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:42,345 [MainThread  ] [INFO ]  28c4b2e7-b9d3-48db-9f39-932853819854/lig_posres.itp
+2021-05-21 02:47:42,346 [MainThread  ] [INFO ]  28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top
+2021-05-21 02:47:42,347 [MainThread  ] [INFO ]  28c4b2e7-b9d3-48db-9f39-932853819854/posre.itp
+2021-05-21 02:47:42,348 [MainThread  ] [INFO ]  28c4b2e7-b9d3-48db-9f39-932853819854/unl_GMX.itp
+2021-05-21 02:47:42,349 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:42,774 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright solvate -cp /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_editconf.gro -cs spc216.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -p 28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top
+
+2021-05-21 02:47:42,775 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:42,776 [MainThread  ] [INFO ]  
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary.
+
+NOTE: From version 5.0 gmx uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Adding line for 6351 solvent molecules to topology file (28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top)
+
+2021-05-21 02:47:42,777 [MainThread  ] [INFO ]                    :-) GROMACS - gmx solvate, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright solvate -cp /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_editconf.gro -cs spc216.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -p 28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top
+
+Reading solute configuration
+unl_GMX.gro created by acpype (Rev: 0) on Fri May 21 02:47:37 2021 t=   0.00000
+Containing 2497 atoms in 158 residues
+Reading solvent configuration and velocities
+216H2O,WATJP01,SPC216,SPC-MODEL,300K,BOX(M)=1.86206NM,WFVG,MAR. 1984
+Containing 648 atoms in 216 residues
+
+Initialising inter-atomic distances...
+Generating solvent configuration
+Will generate new solvent configuration of 4x4x3 boxes
+Solvent box contains 25146 atoms in 8382 residues
+Removed 3792 solvent atoms due to solvent-solvent overlap
+Removed 2301 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms):  6351 residues
+Generated solvent containing 19053 atoms in 6351 residues
+Writing generated configuration to /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro
+
+Output configuration contains 21550 atoms in 6509 residues
+Volume                 :     219.459 (nm^3)
+Density                :     1011.93 (g/l)
+Number of SOL molecules:   6351   
+
+Processing topology
+
+gcq#551: "Money won't buy happiness, but it will pay the salaries of a large research staff to study the problem." (Bill Vaughan)
+
+
+2021-05-21 02:47:42,784 [MainThread  ] [INFO ]  Compressing topology to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:42,786 [MainThread  ] [INFO ]  Ignored file 28c4b2e7-b9d3-48db-9f39-932853819854/amber99sb-ildn.ff/forcefield.itp
+2021-05-21 02:47:42,811 [MainThread  ] [INFO ]  Ignored file 28c4b2e7-b9d3-48db-9f39-932853819854/amber99sb-ildn.ff/spce.itp
+2021-05-21 02:47:42,813 [MainThread  ] [INFO ]  Ignored file 28c4b2e7-b9d3-48db-9f39-932853819854/amber99sb-ildn.ff/ions.itp
+2021-05-21 02:47:42,823 [MainThread  ] [INFO ]  Adding:
+2021-05-21 02:47:42,824 [MainThread  ] [INFO ]  ['28c4b2e7-b9d3-48db-9f39-932853819854/lig_posres.itp', '28c4b2e7-b9d3-48db-9f39-932853819854/ligand.top', '28c4b2e7-b9d3-48db-9f39-932853819854/posre.itp', '28c4b2e7-b9d3-48db-9f39-932853819854/unl_GMX.itp']
+2021-05-21 02:47:42,826 [MainThread  ] [INFO ]  to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:42,829 [MainThread  ] [INFO ]  Removed: ['28c4b2e7-b9d3-48db-9f39-932853819854']
+2021-05-21 02:47:42,964 [MainThread  ] [INFO ]  GROMACS Grompp 514 version detected
+2021-05-21 02:47:42,988 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:42,989 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:42,990 [MainThread  ] [INFO ]  ['640ee594-3824-430a-827d-e0de29a572fe/lig_posres.itp', '640ee594-3824-430a-827d-e0de29a572fe/ligand.top', '640ee594-3824-430a-827d-e0de29a572fe/posre.itp', '640ee594-3824-430a-827d-e0de29a572fe/unl_GMX.itp']
+2021-05-21 02:47:42,991 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:42,992 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:42,993 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:42,995 [MainThread  ] [INFO ]  640ee594-3824-430a-827d-e0de29a572fe/lig_posres.itp
+2021-05-21 02:47:42,996 [MainThread  ] [INFO ]  640ee594-3824-430a-827d-e0de29a572fe/ligand.top
+2021-05-21 02:47:42,997 [MainThread  ] [INFO ]  640ee594-3824-430a-827d-e0de29a572fe/posre.itp
+2021-05-21 02:47:42,998 [MainThread  ] [INFO ]  640ee594-3824-430a-827d-e0de29a572fe/unl_GMX.itp
+2021-05-21 02:47:43,001 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:43,261 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright grompp -f 733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -p 640ee594-3824-430a-827d-e0de29a572fe/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr -po mdout.mdp -maxwarn 10
+
+2021-05-21 02:47:43,262 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:43,264 [MainThread  ] [INFO ]  Analysing residue names:
+There are:   157    Protein residues
+There are:     1      Other residues
+There are:  6351      Water residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+This run will generate roughly 2 Mb of data
+
+2021-05-21 02:47:43,265 [MainThread  ] [INFO ]                    :-) GROMACS - gmx grompp, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright grompp -f 733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate.gro -p 640ee594-3824-430a-827d-e0de29a572fe/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr -po mdout.mdp -maxwarn 10
+
+
+NOTE 1 [file 733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp, line 2]:
+  733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp did not specify a value
+  for the .mdp option "cutoff-scheme". Probably it was first intended for
+  use with GROMACS before 4.6. In 4.6, the Verlet scheme was introduced,
+  but the group scheme was still the default. The default is now the Verlet
+  scheme, so you will observe different behaviour.
+
+Setting the LD random seed to 3127536281
+Generated 2701 of the 2701 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 2701 of the 2701 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+Excluding 3 bonded neighbours molecule type 'unl'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 2 [file ligand.top, line 23460]:
+  System has non-zero total charge: -6.000004
+  Total charge should normally be an integer. See
+  http://www.gromacs.org/Documentation/Floating_Point_Arithmetic
+  for discussion on how close it should be to an integer.
+  
+
+
+Removing all charge groups because cutoff-scheme=Verlet
+
+NOTE 3 [file ligand.top, line 23460]:
+  The bond in molecule-type Protein_chain_A between atoms 65 OG1 and 66 HG1
+  has an estimated oscillational period of 9.0e-03 ps, which is less than
+  10 times the time step of 1.0e-03 ps.
+  Maybe you forgot to change the constraints mdp option.
+
+Number of degrees of freedom in T-Coupling group rest is 45594.00
+
+NOTE 4 [file 733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+NOTE 5 [file 733f114f-5af4-4b7b-a83c-3806e50a29cc/grompp.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 5 notes
+
+gcq#390: "Physics is a few rules, and with some handwaving you can make up the rest" (Michael Levitt)
+
+
+2021-05-21 02:47:43,276 [MainThread  ] [INFO ]  Removed: ['mdout.mdp', '640ee594-3824-430a-827d-e0de29a572fe', '733f114f-5af4-4b7b-a83c-3806e50a29cc']
+2021-05-21 02:47:43,340 [MainThread  ] [INFO ]  GROMACS Genion 514 version detected
+2021-05-21 02:47:43,358 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:43,360 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:43,361 [MainThread  ] [INFO ]  ['67775813-8907-4ea2-b962-1e3d7a5e359a/lig_posres.itp', '67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top', '67775813-8907-4ea2-b962-1e3d7a5e359a/posre.itp', '67775813-8907-4ea2-b962-1e3d7a5e359a/unl_GMX.itp']
+2021-05-21 02:47:43,362 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:43,363 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/solvate_top.zip
+2021-05-21 02:47:43,364 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:43,365 [MainThread  ] [INFO ]  67775813-8907-4ea2-b962-1e3d7a5e359a/lig_posres.itp
+2021-05-21 02:47:43,366 [MainThread  ] [INFO ]  67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top
+2021-05-21 02:47:43,367 [MainThread  ] [INFO ]  67775813-8907-4ea2-b962-1e3d7a5e359a/posre.itp
+2021-05-21 02:47:43,369 [MainThread  ] [INFO ]  67775813-8907-4ea2-b962-1e3d7a5e359a/unl_GMX.itp
+2021-05-21 02:47:43,370 [MainThread  ] [INFO ]  To reach up 0.05 mol/litre concentration
+2021-05-21 02:47:43,371 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:43,505 [MainThread  ] [INFO ]  echo "SOL" | gmx -nobackup -nocopyright genion -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -p 67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top -neutral -conc 0.05 -seed 1993
+
+2021-05-21 02:47:43,507 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:43,508 [MainThread  ] [INFO ]  Will try to add 13 NA ions and 7 CL ions.
+Select a continuous group of solvent molecules
+Selected 15: 'SOL'
+
+Processing topology
+Replacing 20 solute molecules in topology file (67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top)  by 13 NA and 7 CL ions.
+
+2021-05-21 02:47:43,509 [MainThread  ] [INFO ]                    :-) GROMACS - gmx genion, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright genion -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -p 67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top -neutral -conc 0.05 -seed 1993
+
+Reading file /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr, VERSION 5.1.4 (single precision)
+Reading file /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/complex_genion.tpr, VERSION 5.1.4 (single precision)
+Group     0 (         System) has 21550 elements
+Group     1 (        Protein) has  2460 elements
+Group     2 (      Protein-H) has  1240 elements
+Group     3 (        C-alpha) has   157 elements
+Group     4 (       Backbone) has   471 elements
+Group     5 (      MainChain) has   629 elements
+Group     6 (   MainChain+Cb) has   780 elements
+Group     7 (    MainChain+H) has   783 elements
+Group     8 (      SideChain) has  1677 elements
+Group     9 (    SideChain-H) has   611 elements
+Group    10 (    Prot-Masses) has  2460 elements
+Group    11 (    non-Protein) has 19090 elements
+Group    12 (          Other) has    37 elements
+Group    13 (            UNL) has    37 elements
+Group    14 (          Water) has 19053 elements
+Group    15 (            SOL) has 19053 elements
+Group    16 (      non-Water) has  2497 elements
+Select a group: Number of (3-atomic) solvent molecules: 6351
+Replacing solvent molecule 637 (atom 4408) with NA
+Replacing solvent molecule 1767 (atom 7798) with NA
+Replacing solvent molecule 1393 (atom 6676) with NA
+Replacing solvent molecule 5787 (atom 19858) with NA
+Replacing solvent molecule 5913 (atom 20236) with NA
+Replacing solvent molecule 1008 (atom 5521) with NA
+Replacing solvent molecule 2104 (atom 8809) with NA
+Replacing solvent molecule 278 (atom 3331) with NA
+Replacing solvent molecule 1299 (atom 6394) with NA
+Replacing solvent molecule 5528 (atom 19081) with NA
+Replacing solvent molecule 1069 (atom 5704) with NA
+Replacing solvent molecule 6195 (atom 21082) with NA
+Replacing solvent molecule 3220 (atom 12157) with NA
+Replacing solvent molecule 3474 (atom 12919) with CL
+Replacing solvent molecule 3078 (atom 11731) with CL
+Replacing solvent molecule 3625 (atom 13372) with CL
+Replacing solvent molecule 4674 (atom 16519) with CL
+Replacing solvent molecule 1172 (atom 6013) with CL
+Replacing solvent molecule 3022 (atom 11563) with CL
+Replacing solvent molecule 6091 (atom 20770) with CL
+
+
+gcq#194: "I Do It All the Time" (Magnapop)
+
+
+2021-05-21 02:47:43,514 [MainThread  ] [INFO ]  Compressing topology to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:43,517 [MainThread  ] [INFO ]  Ignored file 67775813-8907-4ea2-b962-1e3d7a5e359a/amber99sb-ildn.ff/forcefield.itp
+2021-05-21 02:47:43,541 [MainThread  ] [INFO ]  Ignored file 67775813-8907-4ea2-b962-1e3d7a5e359a/amber99sb-ildn.ff/spce.itp
+2021-05-21 02:47:43,543 [MainThread  ] [INFO ]  Ignored file 67775813-8907-4ea2-b962-1e3d7a5e359a/amber99sb-ildn.ff/ions.itp
+2021-05-21 02:47:43,553 [MainThread  ] [INFO ]  Adding:
+2021-05-21 02:47:43,554 [MainThread  ] [INFO ]  ['67775813-8907-4ea2-b962-1e3d7a5e359a/lig_posres.itp', '67775813-8907-4ea2-b962-1e3d7a5e359a/ligand.top', '67775813-8907-4ea2-b962-1e3d7a5e359a/posre.itp', '67775813-8907-4ea2-b962-1e3d7a5e359a/unl_GMX.itp']
+2021-05-21 02:47:43,556 [MainThread  ] [INFO ]  to: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:43,559 [MainThread  ] [INFO ]  Removed: ['67775813-8907-4ea2-b962-1e3d7a5e359a']
+2021-05-21 02:47:43,693 [MainThread  ] [INFO ]  GROMACS Grompp 514 version detected
+2021-05-21 02:47:43,714 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:43,715 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:43,716 [MainThread  ] [INFO ]  ['6ac6d557-5cdc-4953-a638-676610e9eb65/lig_posres.itp', '6ac6d557-5cdc-4953-a638-676610e9eb65/ligand.top', '6ac6d557-5cdc-4953-a638-676610e9eb65/posre.itp', '6ac6d557-5cdc-4953-a638-676610e9eb65/unl_GMX.itp']
+2021-05-21 02:47:43,717 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:43,718 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:43,719 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:43,720 [MainThread  ] [INFO ]  6ac6d557-5cdc-4953-a638-676610e9eb65/lig_posres.itp
+2021-05-21 02:47:43,721 [MainThread  ] [INFO ]  6ac6d557-5cdc-4953-a638-676610e9eb65/ligand.top
+2021-05-21 02:47:43,722 [MainThread  ] [INFO ]  6ac6d557-5cdc-4953-a638-676610e9eb65/posre.itp
+2021-05-21 02:47:43,723 [MainThread  ] [INFO ]  6ac6d557-5cdc-4953-a638-676610e9eb65/unl_GMX.itp
+2021-05-21 02:47:43,727 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:43,973 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright grompp -f e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -p 6ac6d557-5cdc-4953-a638-676610e9eb65/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppmin.tpr -po mdout.mdp -maxwarn 10
+
+2021-05-21 02:47:43,974 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:43,976 [MainThread  ] [INFO ]  Analysing residue names:
+There are:   157    Protein residues
+There are:     1      Other residues
+There are:  6331      Water residues
+There are:    20        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+This run will generate roughly 2 Mb of data
+
+2021-05-21 02:47:43,977 [MainThread  ] [INFO ]                    :-) GROMACS - gmx grompp, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright grompp -f e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion.gro -p 6ac6d557-5cdc-4953-a638-676610e9eb65/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppmin.tpr -po mdout.mdp -maxwarn 10
+
+
+NOTE 1 [file e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp, line 4]:
+  e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp did not specify a value
+  for the .mdp option "cutoff-scheme". Probably it was first intended for
+  use with GROMACS before 4.6. In 4.6, the Verlet scheme was introduced,
+  but the group scheme was still the default. The default is now the Verlet
+  scheme, so you will observe different behaviour.
+
+Setting the LD random seed to 1095943164
+Generated 2701 of the 2701 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 2701 of the 2701 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+Excluding 3 bonded neighbours molecule type 'unl'
+Excluding 2 bonded neighbours molecule type 'SOL'
+Excluding 1 bonded neighbours molecule type 'NA'
+Excluding 1 bonded neighbours molecule type 'CL'
+Removing all charge groups because cutoff-scheme=Verlet
+
+NOTE 2 [file ligand.top, line 23462]:
+  The bond in molecule-type Protein_chain_A between atoms 65 OG1 and 66 HG1
+  has an estimated oscillational period of 9.0e-03 ps, which is less than
+  10 times the time step of 1.0e-03 ps.
+  Maybe you forgot to change the constraints mdp option.
+
+Number of degrees of freedom in T-Coupling group rest is 45534.00
+
+NOTE 3 [file e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+NOTE 4 [file e650354f-532a-4e16-b29e-bbac85afe243/grompp.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 4 notes
+
+gcq#63: "Keep Your Shoes and Socks On, People" (F. Zappa)
+
+
+2021-05-21 02:47:43,986 [MainThread  ] [INFO ]  Removed: ['mdout.mdp', '6ac6d557-5cdc-4953-a638-676610e9eb65', 'e650354f-532a-4e16-b29e-bbac85afe243']
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/biobb_common/tools/file_utils.py:354: UserWarning: Warning: dt is not a recognized property. The most similar property is: io_dict
+  error_property, close_property))
+2021-05-21 02:47:44,056 [MainThread  ] [INFO ]  GROMACS Mdrun 514 version detected
+2021-05-21 02:47:44,061 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:45,422 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright mdrun -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppmin.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.trr -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -e /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.edr -g /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.log -nt 12
+
+2021-05-21 02:47:45,423 [MainThread  ] [INFO ]  Exit code -11
+
+2021-05-21 02:47:45,425 [MainThread  ] [INFO ]                     :-) GROMACS - gmx mdrun, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright mdrun -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppmin.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.trr -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -e /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.edr -g /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.log -nt 12
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 56 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: GenuineIntel
+    Brand:  Intel(R) Xeon(R) CPU E5-2697 v3 @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX2_256
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+Reading file /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppmin.tpr, VERSION 5.1.4 (single precision)
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+Using 12 OpenMP threads 
+
+
+NOTE: The number of threads is not equal to the number of (logical) cores
+      and the -pin option is set to auto: will not pin thread to cores.
+      This can lead to significant performance degradation.
+      Consider using -pin on (and -pinoffset in case you run multiple jobs).
+
+starting mdrun 'Protein in water'
+5000 steps,      5.0 ps.
+
+WARNING: Listed nonbonded interaction between particles 909 and 919
+at distance 3.561 which is larger than the table limit 2.000 nm.
+
+This is likely either a 1,4 interaction, or a listed interaction inside
+a smaller molecule you are decoupling during a free energy calculation.
+Since interactions at distances beyond the table cannot be computed,
+they are skipped until they are inside the table limit again. You will
+only see this message once, even if it occurs for several interactions.
+
+IMPORTANT: This should not happen in a stable simulation, so there is
+probably something wrong with your system. Only change the table-extension
+distance in the mdp file if you are really sure that is the reason.
+
+
+
+WARNING: Listed nonbonded interaction between particles 1771 and 1777
+at distance 1860216.250 which is larger than the table limit 2.000 nm.
+
+This is likely either a 1,4 interaction, or a listed interaction inside
+a smaller molecule you are decoupling during a free energy calculation.
+Since interactions at distances beyond the table cannot be computed,
+they are skipped until they are inside the table limit again. You will
+only see this message once, even if it occurs for several interactions.
+
+IMPORTANT: This should not happen in a stable simulation, so there is
+probably something wrong with your system. Only change the table-extension
+distance in the mdp file if you are really sure that is the reason.
+
+
+
+step 15: Water molecule starting at atom 3833 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 17: Water molecule starting at atom 3833 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 18: Water molecule starting at atom 3833 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 19: Water molecule starting at atom 3833 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 20: Water molecule starting at atom 4025 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 21: Water molecule starting at atom 4025 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 22: Water molecule starting at atom 4025 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 23: Water molecule starting at atom 4025 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 24: Water molecule starting at atom 4025 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+step 25: Water molecule starting at atom 3842 can not be settled.
+Check for bad contacts and/or reduce the timestep if appropriate.
+Wrote pdb files with previous and current coordinates
+
+2021-05-21 02:47:45,430 [MainThread  ] [INFO ]  Removed: []
+2021-05-21 02:47:45,482 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:45,523 [MainThread  ] [INFO ]  gmx energy -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.edr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min_ene.xvg -xvg none < feff5f70-8a9b-42bd-9ce5-114437a8c866/instructions.in
+
+2021-05-21 02:47:45,525 [MainThread  ] [INFO ]  Exit code 0
+
+2021-05-21 02:47:45,526 [MainThread  ] [INFO ]  
+Statistics over 1 steps [ 0.0000 through 0.0000 ps ], 1 data sets
+All statistics are over 1 points
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Potential                   -127620         --          0          0  (kJ/mol)
+
+2021-05-21 02:47:45,527 [MainThread  ] [INFO ]                    :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx energy, VERSION 5.1.4
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx energy -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.edr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min_ene.xvg -xvg none
+
+Opened /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  Angle            3  Proper-Dih.      4  Ryckaert-Bell.
+  5  Improper-Dih.    6  LJ-14            7  Coulomb-14       8  LJ-(SR)       
+  9  Coulomb-(SR)    10  Potential       11  Kinetic-En.     12  Total-Energy  
+ 13  Temperature     14  Pressure        15  Vir-XX          16  Vir-XY        
+ 17  Vir-XZ          18  Vir-YX          19  Vir-YY          20  Vir-YZ        
+ 21  Vir-ZX          22  Vir-ZY          23  Vir-ZZ          24  Pres-XX       
+ 25  Pres-XY         26  Pres-XZ         27  Pres-YX         28  Pres-YY       
+ 29  Pres-YZ         30  Pres-ZX         31  Pres-ZY         32  Pres-ZZ       
+ 33  #Surf*SurfTen   34  T-rest        
+
+Last energy frame read 0 time    0.000         
+
+gcq#188: "How Do You Like Your Vacation So Far ?" (Speed 2 - Cruise Control)
+
+
+2021-05-21 02:47:45,535 [MainThread  ] [INFO ]  Removed: [PurePosixPath('feff5f70-8a9b-42bd-9ce5-114437a8c866')]
+2021-05-21 02:47:54,562 [MainThread  ] [INFO ]  GROMACS MakeNdx 514 version detected
+2021-05-21 02:47:54,569 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:54,596 [MainThread  ] [INFO ]  echo -e '"Protein"|"Other"\nq' | gmx -nobackup -nocopyright make_ndx -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/index.ndx
+
+2021-05-21 02:47:54,598 [MainThread  ] [INFO ]  Exit code 1
+
+2021-05-21 02:47:54,599 [MainThread  ] [INFO ]                   :-) GROMACS - gmx make_ndx, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright make_ndx -f /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx make_ndx, VERSION 5.1.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -f
+    File
+    '/mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro'
+    does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+2021-05-21 02:47:54,605 [MainThread  ] [INFO ]  Removed: []
+2021-05-21 02:47:54,707 [MainThread  ] [INFO ]  GROMACS Grompp 514 version detected
+2021-05-21 02:47:54,728 [MainThread  ] [INFO ]  Extracting: /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:54,729 [MainThread  ] [INFO ]  to:
+2021-05-21 02:47:54,731 [MainThread  ] [INFO ]  ['b510b318-218d-419f-b687-c30260b59c14/lig_posres.itp', 'b510b318-218d-419f-b687-c30260b59c14/ligand.top', 'b510b318-218d-419f-b687-c30260b59c14/posre.itp', 'b510b318-218d-419f-b687-c30260b59c14/unl_GMX.itp']
+2021-05-21 02:47:54,732 [MainThread  ] [INFO ]  Unzipping: 
+2021-05-21 02:47:54,733 [MainThread  ] [INFO ]  /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/genion_top.zip
+2021-05-21 02:47:54,734 [MainThread  ] [INFO ]  To: 
+2021-05-21 02:47:54,735 [MainThread  ] [INFO ]  b510b318-218d-419f-b687-c30260b59c14/lig_posres.itp
+2021-05-21 02:47:54,736 [MainThread  ] [INFO ]  b510b318-218d-419f-b687-c30260b59c14/ligand.top
+2021-05-21 02:47:54,737 [MainThread  ] [INFO ]  b510b318-218d-419f-b687-c30260b59c14/posre.itp
+2021-05-21 02:47:54,738 [MainThread  ] [INFO ]  b510b318-218d-419f-b687-c30260b59c14/unl_GMX.itp
+2021-05-21 02:47:54,742 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:54,771 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright grompp -f 9c10ca43-f63b-4b2b-b705-09527f7402fe/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -p b510b318-218d-419f-b687-c30260b59c14/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppnvt.tpr -po mdout.mdp -maxwarn 10
+
+2021-05-21 02:47:54,773 [MainThread  ] [INFO ]  Exit code 1
+
+2021-05-21 02:47:54,774 [MainThread  ] [INFO ]                    :-) GROMACS - gmx grompp, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright grompp -f 9c10ca43-f63b-4b2b-b705-09527f7402fe/grompp.mdp -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -r /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro -p b510b318-218d-419f-b687-c30260b59c14/ligand.top -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppnvt.tpr -po mdout.mdp -maxwarn 10
+
+
+-------------------------------------------------------
+Program:     gmx grompp, VERSION 5.1.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File
+    '/mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro'
+    does not exist or is not accessible.
+  In command-line option -r
+    File
+    '/mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/min.gro'
+    does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+2021-05-21 02:47:54,784 [MainThread  ] [INFO ]  Removed: ['b510b318-218d-419f-b687-c30260b59c14', '9c10ca43-f63b-4b2b-b705-09527f7402fe']
+2021-05-21 02:47:54,850 [MainThread  ] [INFO ]  GROMACS Mdrun 514 version detected
+2021-05-21 02:47:54,855 [MainThread  ] [INFO ]  Not using any container
+2021-05-21 02:47:54,884 [MainThread  ] [INFO ]  gmx -nobackup -nocopyright mdrun -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppnvt.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.trr -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.gro -e /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.edr -g /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.log -cpo /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.cpt -nt 12
+
+2021-05-21 02:47:54,886 [MainThread  ] [INFO ]  Exit code 1
+
+2021-05-21 02:47:54,887 [MainThread  ] [INFO ]                     :-) GROMACS - gmx mdrun, VERSION 5.1.4 (-:
+
+Executable:   /home/golovin/progs/bin/gmx514
+Data prefix:  /home/golovin/progs
+Command line:
+  gmx -nobackup -nocopyright mdrun -s /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppnvt.tpr -o /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.trr -c /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.gro -e /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.edr -g /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.log -cpo /mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/nvt.cpt -nt 12
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, VERSION 5.1.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -s
+    File
+    '/mnt/scratch/users/fbbstudent/work/rustam/A1/L_PI35P/PL_0__1/HR_0__2/gppnvt.tpr'
+    does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+2021-05-21 02:47:54,893 [MainThread  ] [INFO ]  Removed: []
+2021-05-21 02:47:54,921 [MainThread  ] [INFO ]  GMXEnergy: Unexisting energy input file, exiting
+/mnt/scratch/users/fbbstudent/work/rustam/miniconda3/envs/py37/lib/python3.7/site-packages/IPython/core/interactiveshell.py:3449: UserWarning:
+
+To exit: use 'exit', 'quit', or Ctrl-D.
