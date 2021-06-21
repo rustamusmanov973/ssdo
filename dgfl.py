@@ -54,8 +54,8 @@ import sys
 import numpy as np
 import MDAnalysis as mda
 import MDAnalysis.analysis.rms
-import MDAnalysis.analysisis.encore
-import MDAnalysis.analysis.distances
+# import MDAnalysis.analysisis.encore
+# import MDAnalysis.analysis.distances
 from types import FunctionType
 from pathlib import PosixPath
 import os
